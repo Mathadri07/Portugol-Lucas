@@ -1,23 +1,31 @@
+//CAIXA ELETRÔNICO
 programa
 {
     funcao inicio()
     {
+    	//VARIÁVEL.
         real saldo = 1000
         real valor
         inteiro opcao = 0
-        inteiro senha = 123
-
+        inteiro senha = 1234
+        
+	//SENHA.
         escreva("Digite sua senha: ")
         leia(senha)
 
-        se(senha == 123){
-        	escreva("Acesso liberado! ")
-        	}
-        senao
-        {
-        	escreva("Senha incorreta tente novamente! ")
+        enquanto(senha != 1234){
+        	escreva("Senha incorreta! Tente novamente! ")
+        	leia(senha)
+
+        	se(senha == 1234){
+        		escreva("Acesso liberado! \n")
+        		}
+        	se(senha > 9999 ou senha < 1000){
+        		escreva("Número inválido! \n")
+        		}
         	}
 
+	//MENU.
         enquanto (opcao != 4)
         {
             escreva("\n CAIXA ELETRÔNICO \n")
@@ -28,11 +36,13 @@ programa
             escreva("Escolha uma opção: ")
             leia(opcao)
 
+	//OPÇÃO 1.
             se (opcao == 1)
             {
                 escreva("\nSeu saldo atual é: R$ ", saldo, "\n")
             }
-
+            
+	//OPÇÃO 2.
             se (opcao == 2)
             {
                 escreva("\nDigite o valor que deseja sacar: R$ ")
@@ -48,7 +58,8 @@ programa
                     escreva("Saque de R$ ", valor, " realizado com sucesso.\n")
                 }
             }
-
+            
+	//OPÇÃO 3.
             se (opcao == 3)
             {
                 escreva("\nDigite o valor que deseja depositar: R$ ")
@@ -64,12 +75,14 @@ programa
                     escreva("Depósito de R$ ", valor, " realizado com sucesso.\n")
                 }
             }
-
+            
+	//OPÇÃO 4.
             se (opcao == 4)
             {
                 escreva("\nDesligando o sistema... Obrigado!\n")
             }
-
+            
+	//OPÇÃO INVÁLIDA.
             se (opcao < 1 ou opcao > 4)
             {
                 escreva("Opção inválida. Tente novamente.\n")
@@ -77,3 +90,14 @@ programa
         }
     }
 }
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 558; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = ;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
