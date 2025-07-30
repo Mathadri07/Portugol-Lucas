@@ -3,13 +3,13 @@ programa
 {
     funcao inicio()
     {
-    	//VARIÁVEL.
+    	//VARIÁVEL
         real saldo = 1000
         real valor
         inteiro opcao = 0
         inteiro senha = 1234
         
-	//SENHA.
+	//SENHA
         escreva("Digite sua senha: ")
         leia(senha)
 
@@ -25,7 +25,7 @@ programa
         		}
         	}
 
-	//MENU.
+	//MENU
         enquanto (opcao != 4)
         {
             escreva("\n CAIXA ELETRÔNICO \n")
@@ -36,13 +36,13 @@ programa
             escreva("Escolha uma opção: ")
             leia(opcao)
 
-	//OPÇÃO 1.
+	//OPÇÃO 1
             se (opcao == 1)
             {
                 escreva("\nSeu saldo atual é: R$ ", saldo, "\n")
             }
             
-	//OPÇÃO 2.
+	//OPÇÃO 2
             se (opcao == 2)
             {
                 escreva("\nDigite o valor que deseja sacar: R$ ")
@@ -59,7 +59,7 @@ programa
                 }
             }
             
-	//OPÇÃO 3.
+	//OPÇÃO 3
             se (opcao == 3)
             {
                 escreva("\nDigite o valor que deseja depositar: R$ ")
@@ -76,13 +76,13 @@ programa
                 }
             }
             
-	//OPÇÃO 4.
+	//OPÇÃO 4
             se (opcao == 4)
             {
                 escreva("\nDesligando o sistema... Obrigado!\n")
             }
             
-	//OPÇÃO INVÁLIDA.
+	//OPÇÃO INVÁLIDA
             se (opcao < 1 ou opcao > 4)
             {
                 escreva("Opção inválida. Tente novamente.\n")
@@ -90,3 +90,14 @@ programa
         }
     }
 }
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 18; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = ;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
